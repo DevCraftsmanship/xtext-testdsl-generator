@@ -1,3 +1,5 @@
+![Banner](screenshots/banner.png)
+
 # TestDSL 🚀
 
 A Domain Specific Language (DSL) built using Xtext to define and generate structured test cases.
