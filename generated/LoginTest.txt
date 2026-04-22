@@ -1,0 +1,25 @@
+{
+  "testSuite": "LoginTest",
+  "testCases": [
+    {
+      "name": "validLogin",
+      "steps": [
+        {
+          "type": "Input",
+          "key": "username",
+          "value": "admin"
+        },
+        {
+          "type": "Input",
+          "key": "password",
+          "value": "1234"
+        },
+        {
+          "type": "Expect",
+          "key": "status",
+          "value": "SUCCESS"
+        }
+      ]
+    }
+  ]
+}

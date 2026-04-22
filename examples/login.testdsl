@@ -1,0 +1,6 @@
+TestSuite LoginTest
+
+TestCase validLogin:
+    input username = "admin"
+    input password = "1234"
+    expect status = SUCCESS

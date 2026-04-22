@@ -1,0 +1,24 @@
+grammar org.myDSL.testdsl.TestDsl with org.eclipse.xtext.common.Terminals
+
+generate testDsl "http://www.myDSL.org/testdsl/TestDsl"
+
+Model:
+    'TestSuite' name=ID
+    testCases+=TestCase*;
+
+TestSuite:
+    'TestSuite' name=ID
+    testCases+=TestCase*;
+
+TestCase:
+    'TestCase' name=ID ':'
+    steps+=Step*;
+
+Step:
+    Input | Expect;
+
+Input:
+    'input' key=ID '=' value=STRING;
+
+Expect:
+    'expect' key=ID '=' value=ID;
